@@ -91,7 +91,7 @@
             const nombre3 = parseInt(document.getElementById('nombre3').value);
             const message = document.getElementById('message');
 
-            const nombreAleatoire = Math.floor(Math.random() * 31);
+            const nombreAleatoire = Math.floor(Math.random() * 21);
 
             if (nombre1 === nombreAleatoire || nombre2 === nombreAleatoire || nombre3 === nombreAleatoire) {
                 message.textContent = `Félicitations ${nom}, vous venez de remporter un ticket!`;
@@ -110,12 +110,12 @@
     <div class="container">
         <h1>Jeu de Deviner le Nombre</h1>
         <h5>L'objectif du jeu est très simple : sur la première case, vous entrez votre nom. Sur les 3 autres cases en bas, vous choisissez 3 chiffres différents. Si au moins 1 des 3 chiffres que vous avez entrés est le chiffre gagnant, alors vous aurez un message qui vous dira que vous avez gagné un ticket. Dans le cas où vous ne devinez pas le bon chiffre, alors vous aurez un message qui vous demandera de réessayer.</h5>
-        <h5 style="color: red;">Le nombre à deviner est situé entre 0 et 30. Lorsque vous réussissez, faites une capture d'écran du message de réussite et envoyez-le dans le grand groupe d'ESCAE.</h5>
+        <h5 style="color: red;">Le nombre à deviner est situé entre 0 et 20. Lorsque vous réussissez, faites une capture d'écran du message de réussite et envoyez-le dans le grand groupe d'ESCAE.</h5>
         <input type="text" id="nom" placeholder="Entrez votre nom">
         <br>
-        <input type="number" id="nombre1" placeholder="Entrez un nombre entre 0 et 30">
-        <input type="number" id="nombre2" placeholder="Entrez un nombre entre 0 et 30">
-        <input type="number" id="nombre3" placeholder="Entrez un nombre entre 0 et 30">
+        <input type="number" id="nombre1" placeholder="Entrez un nombre entre 0 et 20">
+        <input type="number" id="nombre2" placeholder="Entrez un nombre entre 0 et 20">
+        <input type="number" id="nombre3" placeholder="Entrez un nombre entre 0 et 20">
         <br>
         <button onclick="jouer()">Jouer</button>
         <span class="message" id="message"></span>
